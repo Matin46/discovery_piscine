@@ -26,7 +26,7 @@ def checkmate(board: str):
                                     check_point.append((j, i))                              
             
         
-        point = {coor: ("X" if coor in check_point and val in [".", "K"] else val) for coor, val in ob_point.items()} #เชคว่าพิกัดไหนถูก check
+        ob_point = {coor: ("X" if coor in check_point and val in [".", "K"] else val) for coor, val in ob_point.items()} #เชคว่าพิกัดไหนถูก check
         
         
         
